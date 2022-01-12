@@ -1,13 +1,13 @@
 // Assignment code here
 
-
+// 1 Password Length Prompt //
 function generatePassword() {
-  var confirmLength = window.prompt("Please choose the desired length of your password. It must be between 8 and 128 characters.");
-    if (confirmLength > 8 || confirmLength < 128) { 
-    alert ("Thank you, your password is" + passwordLength + "characters long.");
+  var passwordLength = window.prompt("Please choose the desired length of your password. It must be between 8 and 128 characters.");
+    if (passwordLength >= 8 || passwordLength <= 128) { 
+    alert("Great choice, " + passwordLength + " is my favorite number!");
 
   } else { 
-    alert ("This is not a valid answer, please choose a value between 8 and 128.");
+    alert("Only values between 8 and 128 are acceptable.");
   }
   return generatePassword();
 }
